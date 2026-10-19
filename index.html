@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio Profissional</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-text {
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- Navegação -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="text-2xl font-bold gradient-text">SeuNome.dev</div>
+                <div class="hidden md:flex space-x-8 font-medium text-slate-600">
+                    <a href="#home" class="hover:text-blue-600 transition">Início</a>
+                    <a href="#sobre" class="hover:text-blue-600 transition">Sobre</a>
+                    <a href="#skills" class="hover:text-blue-600 transition">Habilidades</a>
+                    <a href="#projetos" class="hover:text-blue-600 transition">Projetos</a>
+                    <a href="#contato" class="hover:text-blue-600 transition">Contato</a>
+                </div>
+                <div class="md:hidden text-2xl cursor-pointer" id="mobile-menu-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+        <!-- Menu Mobile -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 py-4 space-y-4 text-center">
+            <a href="#home" class="block hover:text-blue-600 transition">Início</a>
+            <a href="#sobre" class="block hover:text-blue-600 transition">Sobre</a>
+            <a href="#skills" class="block hover:text-blue-600 transition">Habilidades</a>
+            <a href="#projetos" class="block hover:text-blue-600 transition">Projetos</a>
+            <a href="#contato" class="block hover:text-blue-600 transition">Contato</a>
+        </div>
+    </nav>
+
+    <!-- 1. Hero Section -->
+    <section id="home" class="pt-32 pb-20 px-4 text-center max-w-4xl mx-auto">
+        <div class="mb-8 inline-block p-2 rounded-full bg-blue-100 text-blue-600 font-semibold text-sm px-4">
+            Disponível para novos projetos 🚀
+        </div>
+        <h1 class="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
+            Olá, eu sou <span class="gradient-text">Seu Nome</span>
+        </h1>
+        <p class="text-xl text-slate-600 mb-10 leading-relaxed">
+            Desenvolvedor Fullstack apaixonado por criar experiências digitais incríveis,
+            focadas em performance e usabilidade. Transformo ideias em código.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <a href="#projetos" class="bg-blue-600 text-white px-8 py-4 rounded-full font-semibold hover:bg-blue-700 transition shadow-lg shadow-blue-200">
+                Ver Projetos
+            </a>
+            <a href="#contato" class="bg-white border border-slate-200 px-8 py-4 rounded-full font-semibold hover:bg-slate-50 transition">
+                Entre em contato
+            </a>
+        </div>
+    </section>
+
+    <!-- 2. Sobre Mim -->
+    <section id="sobre" class="py-20 bg-white px-4">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div class="relative group">
+                <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+                <img src="https://via.placeholder.com/500x600" alt="Sua Foto" class="relative rounded-2xl shadow-xl w-full object-cover">
+            </div>
+            <div>
+                <h2 class="text-3xl font-bold mb-6">Sobre <span class="gradient-text">Mim</span></h2>
+                <p class="text-slate-600 mb-4 leading-relaxed">
+                    Com X anos de experiência no mercado, especializei-me em construir aplicações web escaláveis e intuitivas. Meu foco é sempre a qualidade do código e a melhor experiência para o usuário final.
+                </p>
+                <p class="text-slate-600 mb-6 leading-relaxed">
+                    Fora do código, gosto de estudar novas arquiteturas, contribuir com projetos open-source e aprender constantemente sobre as tendências de design e UX.
+                </p>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="p-4 bg-slate-50 rounded-lg border border-slate-100">
+                        <div class="text-blue-600 font-bold text-2xl">10+</div>
+                        <div class="text-slate-500 text-sm">Projetos Entregues</div>
+                    </div>
+                    <div class="p-4 bg-slate-50 rounded-lg border border-slate-100">
+                        <div class="text-purple-600 font-bold text-2xl">3+</div>
+                        <div class="text-slate-500 text-sm">Anos de Exp.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Habilidades -->
+    <section id="skills" class="py-20 px-4 max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold mb-4">Minhas <span class="gradient-text">Habilidades</span></h2>
+            <p class="text-slate-600">Tecnologias e ferramentas que utilizo no dia a dia</p>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <!-- Skill Card -->
+            <div class="p-6 bg-white rounded-xl border border-slate-200 text-center hover:border-blue-400 transition-all hover:shadow-md">
+                <i class="fa-brands fa-react text-4xl text-blue-500 mb-4"></i>
+                <h3 class="font-semibold">React.js</h3>
+            </div>
+            <div class="p-6 bg-white rounded-xl border border-slate-200 text-center hover:border-blue-400 transition-all hover:shadow-md">
+                <i class="fa-brands fa-js text-4xl text-yellow-400 mb-4"></i>
+                <h3 class="font-semibold">JavaScript</h3>
+            </div>
+            <div class="p-6 bg-white rounded-xl border border-slate-200 text-center hover:border-blue-400 transition-all hover:shadow-md">
+                <i class="fa-brands fa-node-js text-4xl text-green-500 mb-4"></i>
+                <h3 class="font-semibold">Node.js</h3>
+            </div>
+            <div class="p-6 bg-white rounded-xl border border-slate-200 text-center hover:border-blue-400 transition-all hover:shadow-md">
+                <i class="fa-brands fa-python text-4xl text-blue-400 mb-4"></i>
+                <h3 class="font-semibold">Python</h3>
+            </div>
+            <div class="p-6 bg-white rounded-xl border border-slate-200 text-center hover:border-blue-400 transition-all hover:shadow-md">
+                <i class="fa-brands fa-git-alt text-4xl text-orange-600 mb-4"></i>
+                <h3 class="font-semibold">Git & GitHub</h3>
+            </div>
+            <div class="p-6 bg-white rounded-xl border border-slate-200 text-center hover:border-blue-400 transition-all hover:shadow-md">
+                <i class="fa-solid fa-database text-4xl text-indigo-500 mb-4"></i>
+                <h3 class="font-semibold">MongoDB/SQL</h3>
+            </div>
+            <div class="p-6 bg-white rounded-xl border border-slate-200 text-center hover:border-blue-400 transition-all hover:shadow-md">
+                <i class="fa-solid fa-wind text-4xl text-cyan-500 mb-4"></i>
+                <h3 class="font-semibold">Tailwind CSS</h3>
+            </div>
+            <div class="p-6 bg-white rounded-xl border border-slate-200 text-center hover:border-blue-400 transition-all hover:shadow-md">
+                <i class="fa-brands fa-figma text-4xl text-purple-500 mb-4"></i>
+                <h3 class="font-semibold">Figma</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Projetos -->
+    <section id="projetos" class="py-20 bg-slate-100 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Projetos <span class="gradient-text">Recentes</span></h2>
+                <p class="text-slate-600">Alguns dos trabalhos que me orgulho de ter construído</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Projeto 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition group">
+                    <img src="https://via.placeholder.com/400x250" alt="Projeto 1" class="w-full group-hover:scale-105 transition duration-500">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">E-commerce Moderno</h3>
+                        <p class="text-slate-600 mb-4 text-sm">Uma loja completa com carrinho de compras, pagamentos e painel administrativo.</p>
+                        <div class="flex gap-2 mb-6">
+                            <span class="text-xs font-medium px-2 py-1 bg-slate-100 rounded text-slate-600">React</span>
+                            <span class="text-xs font-medium px-2 py-1 bg-slate-100 rounded text-slate-600">Node.js</span>
+                        </div>
+                        <a href="#" class="text-blue-600 font-semibold hover:underline inline-flex items-center gap-2">
+                            Ver Projeto <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Projeto 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition group">
+                    <img src="https://via.placeholder.com/400x250" alt="Projeto 2" class="w-full group-hover:scale-105 transition duration-500">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">App de Finanças</h3>
+                        <p class="text-slate-600 mb-4 text-sm">Controle financeiro pessoal com gráficos interativos e exportação de relatórios.</p>
+                        <div class="flex gap-2 mb-6">
+                            <span class="text-xs font-medium px-2 py-1 bg-slate-100 rounded text-slate-600">TypeScript</span>
+                            <span class="text-xs font-medium px-2 py-1 bg-slate-100 rounded text-slate-600">Tailwind</span>
+                        </div>
+                        <a href="#" class="text-blue-600 font-semibold hover:underline inline-flex items-center gap-2">
+                            Ver Projeto <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Projeto 3 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition group">
+                    <img src="https://via.placeholder.com/400x250" alt="Projeto 3" class="w-full group-hover:scale-105 transition duration-500">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Plataforma de Cursos</h3>
+                        <p class="text-slate-600 mb-4 text-sm">LMS com sistema de aulas em vídeo, quizzes e emissão de certificados.</p>
+                        <div class="flex gap-2 mb-6">
+                            <span class="text-xs font-medium px-2 py-1 bg-slate-100 rounded text-slate-600">Next.js</span>
+                            <span class="text-xs font-medium px-2 py-1 bg-slate-100 rounded text-slate-600">PostgreSQL</span>
+                        </div>
+                        <a href="#" class="text-blue-600 font-semibold hover:underline inline-flex items-center gap-2">
+                            Ver Projeto <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Contato -->
+    <section id="contato" class="py-20 px-4 max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-4">Vamos <span class="gradient-text">Conversar?</span></h2>
+        <p class="text-slate-600 mb-12">Estou sempre aberto a novas oportunidades e parcerias.</p>
+
+        <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200 grid md:grid-cols-2 gap-12 text-left">
+            <div>
+                <h3 class="text-xl font-bold mb-6">Envie uma mensagem</h3>
+                <form class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-medium text-slate-700 mb-1">Nome</label>
+                        <input type="text" class="w-full px-4 py-2 rounded-lg border border-slate-200 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-slate-700 mb-1">Email</label>
+                        <input type="email" class="w-full px-4 py-2 rounded-lg border border-slate-200 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-slate-700 mb-1">Mensagem</label>
+                        <textarea rows="4" class="w-full px-4 py-2 rounded-lg border border-slate-200 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition"></textarea>
+                    </div>
+                    <button class="w-full bg-blue-600 text-white font-semibold py-3 rounded-lg hover:bg-blue-700 transition">
+                        Enviar Mensagem
+                    </button>
+                </form>
+            </div>
+            <div class="flex flex-col justify-center space-y-6">
+                <div class="flex items-center gap-4 p-4 bg-slate-50 rounded-xl">
+                    <i class="fa-brands fa-linkedin text-2xl text-blue-600"></i>
+                    <div>
+                        <div class="text-sm text-slate-500">LinkedIn</div>
+                        <div class="font-semibold">linkedin.com/in/seuusuario</div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4 p-4 bg-slate-50 rounded-xl">
+                    <i class="fa-brands fa-github text-2xl text-slate-800"></i>
+                    <div>
+                        <div class="text-sm text-slate-500">GitHub</div>
+                        <div class="font-semibold">github.com/seuusuario</div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4 p-4 bg-slate-50 rounded-xl">
+                    <i class="fa-solid fa-envelope text-2xl text-red-500"></i>
+                    <div>
+                        <div class="text-sm text-slate-500">Email</div>
+                        <div class="font-semibold">contato@seuemail.com</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 text-center text-slate-500 border-t border-slate-200">
+        <p>&copy; 2026 Seu Nome. Desenvolvido com ❤️ e Claude Code.</p>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Fechar menu ao clicar em um link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
